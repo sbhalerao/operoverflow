@@ -1,5 +1,5 @@
 .cloud
-  %h2 Etiquetas
+  %h2 Tags
   .tags
     - if Tag.count > 0
       - tag_cloud(Question.tag_counts.reverse[0..20] , 'tag_link') do |tag, klass|
